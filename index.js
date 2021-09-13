@@ -118,15 +118,14 @@ arrOfNumAsStrings.push("6")
 // }
 
 
-const array = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
+const genres = ["Comedy", "Drama", "Romance", "Horror", "Sci-Fi", "Documentary"]
 
-for (let i = 0; i < array.length; i++ ) {
-  const elem = array[i]
+for (let i = 0; i < genres.length; i++ ) {
+  const elem = genres[i]
 
 //   console.log("Genre is: " + elem)
 //   console.log(array[i])
 }
-
 
 
 const movies = [
@@ -237,4 +236,67 @@ const simplifiedMovies = [];
     })
 }
 
-console.log(simplifiedMovies)
+console.log("___________________________________________________")
+
+// function callMovies() { 
+//     console.log("HERE", simplifiedMovies) 
+// }
+
+
+function bark(str) {
+    console.log(str)
+}
+
+// bark("WOOOF")
+// bark("WOF")
+// bark("WOOOOOOOOOF")
+// bark("WOOOOF")
+// bark("WOOOF")
+
+
+function sum(n1, n2) {
+    let result = n1 + n2
+
+    return result
+}
+
+console.log(sum(2, 3))
+console.log(sum(5, 6))
+console.log(sum(7, 8))
+
+function greet(name, age, surname, callback) {
+    
+    console.log("Hello " + name + " " + surname +" you are " + age + " years old")
+    
+    callback() //undefined()
+}
+
+
+
+function finalMessage() {
+    return "I'm done with everything" 
+    
+    console.log("HEY")
+}
+
+// greet("Emilian", 32, "Kasemi", finalMessage)
+// greet("Zee", 23 )
+// greet("Gulliermo" , 18)
+
+
+
+// console.log(finalMessage())
+
+const outerArr = []
+
+function cycleMe(array) {
+    for (let i = 0; i < array.length; i++){
+       outerArr.push(array[i])
+    }
+}
+
+if(Array.isArray(genres)) {
+    cycleMe(genres)
+}
+
+console.log(outerArr)
